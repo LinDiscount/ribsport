@@ -1,0 +1,30 @@
+doctype html
+html(lang="ru")
+    head 
+        meta(charset="UTF-8")
+        meta(name = "vievport", content ="width=device-width, initial-scale=1.0")
+        title Document 
+        link(rel="stylesheet", href= "./styles/indexstule.css")
+    body 
+        include ./modules/header.pug
+        h1 О компании
+        .main__block__1
+                .block__komani 
+                        h4 О компании
+                        p Магазин Рыболов-Спорцмен работает на рынке рыболовных принадлежностей с 2005 года. Любой интересующийся рыбалкой сможет найти в нашем интернет-магазине подходящую для себя продукцию.
+                .block__sponsor 
+                        h4 Спонсорство
+                        p Деятельность компании  направлена не только на предоставление вам максимально широкого выбора товаров, но и на развитие и популяризацию рыболовного спорта. 
+                .block__sotr
+                        h4  Сотрудничество
+                        p Компания всегда открыта для новых предложений по сотрудничеству с производителями и оптовыми компаниями, работающими на территории СНГ. предложение по сотрудничеству,  пишите нам на почту: partners@sportfish.ru
+        h1 Адрес
+        .block__adres
+                .adres__text 
+                        p обл. Московская, р-н Орехово-Зуевский, г. Ликино-Дулево,
+                        p ул. Ленина, д. 10
+                .adres__geo 
+                        a(href="https://yandex.ru/maps/-/CDqiRV1r") 
+                               img(src="./img/map.png", alt="")
+        include ./modules/footer.pug
+
